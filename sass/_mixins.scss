@@ -1,0 +1,12 @@
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+          box-shadow: $shadow;
+}
+
+@mixin transform-scale($value){
+     -webkit-transform: scale($value);
+        -moz-transform: scale($value);
+        -o-transform: scale($value);
+        -ms-transform: scale($value);
+        transform: scale($value);
+}
